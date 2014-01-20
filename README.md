@@ -19,6 +19,12 @@ A quickly put up simple web view to have a quick and easy way to browse Patterns
 * Add more Patterns library
 * Add more views
 
+## Browsers Supports
+* Best performances in Safari & Firefox
+* Chrome seems to struggle a bit when there’s a lot of Patterns loaded at the same time in the Grid layout when the viewport of the computer is really large. Tested at a 2560x1440 resolution on a Mid 2013 13" Macbook Air.
+* Once loaded it is pretty smooth on iOS7. Tested on an iPhone 5.
+* Not tested in any IE version yet
+
 ## Thank you
 
 * @subtlepatterns for all those quality Patterns & for the [demo.html](https://github.com/subtlepatterns/SubtlePatterns/blob/gh-pages/demo.html) JavaScript example using the GitHub API to easily access assets.
