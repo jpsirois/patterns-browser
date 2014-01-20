@@ -1,6 +1,7 @@
 ## Middleman
 tmp
 log
+build
 
 ## Bower
 components
