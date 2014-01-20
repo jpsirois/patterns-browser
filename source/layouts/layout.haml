@@ -4,7 +4,7 @@
     %meta{charset: "utf-8"}/
     %title= yield_content(:title) || I18n.t(:title)
     %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:name => "description", :content => yield_content(:title) || I18n.t(:title)}/
+    %meta{:name => "description", :content => yield_content(:description) || I18n.t(:description)}/
     %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
     %link{href: "//ajax.googleapis.com", rel: "dns-prefetch"}/
     = stylesheet_link_tag "styles"
