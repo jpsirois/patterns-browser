@@ -143,7 +143,7 @@ var loadPatterns = function () {
     }
   };
 
-  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/git/trees/master?recursive=1';
+  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/contents/source/img/subtlepatterns';
   ajax.open("GET", requrl, true);
   ajax.send();
 }
