@@ -1,0 +1,63 @@
+// Column
+
+/* Shared rules {{{*/
+
+.row-3-col, .row-4-col {
+  width: 100%;
+  @extend .clearfix;
+  @include font-size(0);
+}
+
+.col-1, .col-2, .col-3, .col-4 {
+  box-sizing: border-box;
+  @include display(inline-block);
+  vertical-align: top;
+  @include font-size($bodyFontSize);
+
+  padding-right: -$columnGutter;
+  padding-left: $columnGutter;
+
+  &:first-child {
+    padding-left: 0;
+    margin-left: 0;
+
+    section { margin-left: 0; }
+  }
+
+  & > section {
+    padding-left: $columnInnerPadding;
+    padding-right: $columnInnerPadding;
+  }
+}
+
+/*}}}*/
+
+/* Specific Rules {{{*/
+
+.row-3-col {
+  .col-1 { width: 33.33333%; }
+  .col-2 { width: 66.66666%; }
+  .col-3 { width: 100%; }
+}
+
+.row-4-col {
+  .col-1 { width: 25%; }
+  .col-2 { width: 50%; }
+  .col-3 { width: 75%; }
+  .col-4 { width: 100%; }
+}
+
+/*}}}*/
+
+/* @Media Rules {{{*/
+
+@media (max-width: $xs)  {
+
+  .row-3-col, .row-4-col {
+    .col { width: 100%; }
+  }
+
+}
+
+
+/*}}}*/

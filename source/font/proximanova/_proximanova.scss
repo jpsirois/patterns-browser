@@ -1,0 +1,99 @@
+@import 'compass';
+
+$ProximaNovaName: 'Proxima Nova' !default;
+
+// Light
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-light.woff',
+    '/font/proximanova/proximanova-light.ttf'
+  ),
+  '/font/proximanova/proximanova-light.eot',
+  300,
+  normal
+);
+
+// Light - Italic
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-lightitalic.woff',
+    '/font/proximanova/proximanova-lightitalic.ttf'
+  ),
+  '/font/proximanova/proximanova-lightitalic.eot',
+  300,
+  italic
+);
+
+// Regular
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-regular.woff',
+    '/font/proximanova/proximanova-regular.ttf'
+  ),
+  '/font/proximanova/proximanova-regular.eot',
+  normal,
+  normal
+);
+
+// Regular - Italic
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-regularitalic.woff',
+    '/font/proximanova/proximanova-regularitalic.ttf'
+  ),
+  '/font/proximanova/proximanova-regularitalic.eot',
+  normal,
+  italic
+);
+
+// Bold
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-bold.woff',
+    '/font/proximanova/proximanova-bold.ttf'
+  ),
+  '/font/proximanova/proximanova-bold.eot',
+  bold,
+  normal
+);
+
+// Bold - Italic
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-boldit.woff',
+    '/font/proximanova/proximanova-boldit.ttf'
+  ),
+  '/font/proximanova/proximanova-boldit.eot',
+  bold,
+  italic
+);
+
+// SemiBold
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-semibold.woff',
+    '/font/proximanova/proximanova-semibold.ttf'
+  ),
+  '/font/proximanova/proximanova-semibold.eot',
+  600,
+  normal
+);
+
+// SemiBold - Italic
+@include font-face(
+  '#{$ProximaNovaName}',
+  font-files(
+    '/font/proximanova/proximanova-semibolditalic.woff',
+    '/font/proximanova/proximanova-semibolditalic.ttf'
+  ),
+  '/font/proximanova/proximanova-semibolditalic.eot',
+  600,
+  italic
+);

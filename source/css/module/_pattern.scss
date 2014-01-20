@@ -1,0 +1,68 @@
+// Pattern Module Specific style
+
+$patternWidth: 236px;
+
+.patternWrap {
+  position: relative;
+  width: $patternWidth;
+  height: 100%;
+  background: #999;
+  @include box-shadow(0 0 4px #999);
+
+  &:hover,
+  &.focus {
+    .patternMeta,
+    .patternTitle,
+    .patternOrigin {
+      visibility: visible;
+    }
+  }
+}
+
+.patternMeta,
+.patternTitle,
+.patternOrigin {
+  z-index: 10;
+  visibility: hidden;
+  transition-property: color, background, opacity;
+}
+
+.patternMeta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  width: $patternWidth;
+  padding: 4px;
+  @include box-shadow(0 -8px 6px -6px rgba(0,0,0,0.35));
+  @include opacity(.90);
+}
+
+.patternTitle {
+  width: 175px;
+  @include font-size(16);
+}
+
+.patternOrigin {
+  bottom: 4px;
+  right: 4px;
+  position: absolute;
+  @include opacity(.75);
+
+  &:hover {
+    @include opacity(1);
+  }
+}
+
+.patternLink {
+  position: relative;
+  z-index: 9;
+  width: $patternWidth;
+  height: 100%;
+  @include display(block);
+  outline: 0;
+}
+
+.patternFadeWrap {
+  line-height: 0;
+}

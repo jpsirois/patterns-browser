@@ -1,0 +1,103 @@
+// Site Specific Settings
+
+/* Fonts {{{*/
+
+$Arial: Arial, sans-serif;
+$ProximaNova: 'Proxima Nova','Open Sans','Gill Sans MT','Gill Sans',Corbel,Arial,sans-serif;
+$sansserif: $ProximaNova;
+
+$light: 300;
+$normal: normal;
+$bold: bold;
+
+.fw-light { font-weight: $light; }
+.fw-regular { font-weight: $normal; }
+.fw-bold { font-weight: $bold; }
+
+/*}}}*/
+
+/* Colors Name ( generated with: http://chir.ag/projects/name-that-color/ ) {{{*/
+
+
+/*}}}*/
+
+/* Responsive Step {{{*/
+
+$max:   1920px;
+$xxxxl: 1600px;
+$xxxl:  1400px;
+$xxl:   1280px;
+$xl:    1140px;
+$l:     1080px;
+$m:     980px;
+$s:     820px;
+$xs:    740px;
+$xxs:   560px;
+$xxxs:  440px;
+$min:   320px;
+
+@mixin mobile {
+  @media (max-width: $xs)  {
+    @content;
+  }
+}
+
+/*}}}*/
+
+/* Base font color {{{*/
+
+$textBodyColor: black;
+$textTitleColor: black;
+$textEmphasisColor: black;
+
+/*}}}*/
+
+/* Body background-color {{{*/
+
+$bgBodyColor: white;
+$bgWrapColor: white;
+
+/*}}}*/
+
+/* Base size {{{*/
+
+$bodyFontSize: 16px;
+$bodyInnerWidth: $xl - 20px;
+$bodyLetterSpacing: normal;
+$titleLineHeight: 1.1;
+
+/*}}}*/
+
+/* Shadow {{{*/
+
+
+/*}}}*/
+
+/* Form {{{*/
+
+$inputBgColor: white;
+
+/*}}}*/
+
+/* Header {{{*/
+
+
+/*}}}*/
+
+/* Content - Main {{{*/
+
+
+/*}}}*/
+
+/* Footer {{{*/
+
+
+
+/*}}}*/
+
+/* Columns {{{*/
+
+$columnGutter: 20px;
+$columnInnerPadding: 20px;
+
+/*}}}*/

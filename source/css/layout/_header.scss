@@ -1,0 +1,30 @@
+.header {
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  @include box-shadow(0px 2px 10px rgba(0,0,0,0.15));
+  top: 0;
+  left: 0;
+  @include opacity(.98);
+}
+
+.logoHeader {
+  @include display(block);
+  @include opacity(.75);
+  text-decoration: none;
+  font-size: 3em;
+  // text-align: center;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    @include opacity(1);
+  }
+}
+
+.boardTitle {
+  @include font-size(18);
+  margin: 0 0 0 3px;
+}

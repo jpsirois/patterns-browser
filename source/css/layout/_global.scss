@@ -1,0 +1,49 @@
+// Global layout
+
+// Inline element
+.inline {
+  @include display(inline-block);
+  vertical-align: top;
+}
+
+// Inline wrap
+.l-inline {
+  @include font-size(0);
+
+  .inline, & > li {
+    font-size: $bodyFontSize;
+  }
+}
+
+
+// Inline layout elements (ex: Nav menu)
+.l-inline {
+  @extend .l-inline;
+  &, & > ul {
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  li {
+    @include display(inline-block);
+    vertical-align: middle;
+  }
+}
+
+// Vertical Alignement
+@each $position in top, middle, bottom {
+  .valign-#{$position} {
+    vertical-align: $position;
+  }
+}
+
+// Test Alignement (horizontal)
+@each $position in left, center, right {
+  .text-align-#{$position} {
+    text-align: $position;
+  }
+}
+
+// Float element
+.fl-left { float: left; }
+.fl-right { float: right; }

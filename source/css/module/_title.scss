@@ -1,0 +1,23 @@
+// Titles
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5em;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  color: $textTitleColor;
+  font-weight: 600;
+  font-family: $sansserif;
+}
+
+h1 {
+  a {
+    text-decoration: none;
+    color: $textTitleColor;
+    @include transition(none);
+
+    &:hover {
+      color: $textEmphasisColor;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/* Global Button {{{*/
+
+.btn {
+  position: relative;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+
+  em {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    position: relative;
+    vertical-align: middle;
+    font-style: normal;
+
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+      @include font-size(16);
+    }
+  }
+}
+
+.btnRound {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+/*}}}*/

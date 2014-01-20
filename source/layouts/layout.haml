@@ -1,0 +1,22 @@
+!!!
+%html.no-js{:lang =>  I18n.locale}
+  %head
+    %meta{charset: "utf-8"}/
+    %title= yield_content(:title) || I18n.t(:title)
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:name => "description", :content => yield_content(:title) || I18n.t(:title)}/
+    %meta{content: "width=device-width,initial-scale=1", name: "viewport"}/
+    %link{href: "//ajax.googleapis.com", rel: "dns-prefetch"}/
+    = stylesheet_link_tag "styles"
+  %body{:class => page_classes}
+    %header.header{role: "banner"}
+      .logo
+        %a.logoHeader{href: "/"}
+          Patterns Browsers
+        %select#patterns-selector
+          %option{selected: "selected"} Downloading Pattern Names...
+        %main.main{role: "main"}
+      = yield
+    %footer.footer{role: "contentinfo"}
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    = javascript_include_tag  "scripts"
