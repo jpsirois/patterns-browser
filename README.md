@@ -18,7 +18,6 @@ A quickly put up simple web view to have a quick and easy way to browse Patterns
 * Add the metadata for each Pattern if available
 * Add more Patterns library
 * Add more views
-* Cache Patterns API data
 
 ## Thank you
 

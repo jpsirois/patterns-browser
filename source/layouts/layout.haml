@@ -32,5 +32,7 @@
     %main.main{role: "main"}
       = yield
     %footer.footer{role: "contentinfo"}
+    %script{src: "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"}
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    = javascript_include_tag  "jquery-ajax-localstorage-cache"
     = javascript_include_tag  "scripts"

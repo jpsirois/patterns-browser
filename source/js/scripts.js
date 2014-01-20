@@ -119,57 +119,44 @@ var $body = $('body'),
 
 var loadPatterns = function (library, layout) {
   $patternsSelector.html('<option>Downloading Pattern List…</option>');
-  var ajax, ajaxTimeout, requrl;
-  ajax = (window.ActiveXObject) ? new ActiveXObject("Microsoft.XMLHTTP") : (XMLHttpRequest && new XMLHttpRequest()) || null;
+  var requrl;
+  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/contents/source/img/' + library;
 
-  ajaxTimeout = window.setTimeout(function () {
-    ajax.abort();
-  }, 6000);
-
-  ajax.onreadystatechange = function () {
-    var itemsArray, itemsString, i;
-    if (ajax.readyState === 4) {
-      if (ajax.status === 200) {
-        clearTimeout(ajaxTimeout);
-        if (ajax.status !== 200) {
-
-        } else {
-          itemsArray = JSON.parse(ajax.responseText);
-          itemsString = '';
-          if (layout === 'grid') {
-            $body.css('background-image',false);
-            for(i = 0; i < itemsArray.length; i++) {
-              if(itemsArray[i].name.indexOf('.png') !== -1) {
-                imgUrl = itemsArray[i].html_url.replace("blob", "raw");
-                itemsString += '<div class="box">\
-                  <div class="patternWrap">\
-                    <a href="' + imgUrl + '" class="patternLink">\
-                      <div class="patternFadeWrap" style="background-image: url(' + imgUrl + ')"></div>\
-                      <div class="patternMeta"><h2 class="patternTitle">' + itemsArray[i].name + '</h2></div>\
-                    </a>\
-                  </div>\
-                </div>';
-              }
-            }
-            $patternsViewport.html(itemsString);
-            setupBoxes()
-          } else if (layout === 'bg') {
-            $patternsViewport.html('');
-            for(i = 0; i < itemsArray.length; i++) {
-              if(itemsArray[i].name.indexOf('.png') !== -1) {
-                itemsString += '<option value="'+itemsArray[i].html_url.replace("blob", "raw")+'">'+itemsArray[i].name+'</option>';
-              }
-            }
-            $patternsSelector.html(itemsString);
+  $.ajax({
+    url        : requrl,
+    localCache : true,
+    cacheTTL   : 24,
+    success: function(reply) {
+      itemsArray = reply;
+      itemsString = '';
+      if (layout === 'grid') {
+        $body.css('background-image',false);
+        for(i = 0; i < itemsArray.length; i++) {
+          if(itemsArray[i].name.indexOf('.png') !== -1) {
+            imgUrl = itemsArray[i].html_url.replace("blob", "raw");
+            itemsString += '<div class="box">\
+              <div class="patternWrap">\
+                <a href="' + imgUrl + '" class="patternLink">\
+                  <div class="patternFadeWrap" style="background-image: url(' + imgUrl + ')"></div>\
+                  <div class="patternMeta"><h2 class="patternTitle">' + itemsArray[i].name + '</h2></div>\
+                </a>\
+              </div>\
+            </div>';
           }
         }
+        $patternsViewport.html(itemsString);
+        setupBoxes()
+      } else if (layout === 'bg') {
+        $patternsViewport.html('');
+        for(i = 0; i < itemsArray.length; i++) {
+          if(itemsArray[i].name.indexOf('.png') !== -1) {
+            itemsString += '<option value="'+itemsArray[i].html_url.replace("blob", "raw")+'">'+itemsArray[i].name+'</option>';
+          }
+        }
+        $patternsSelector.html(itemsString);
       }
     }
-  };
-
-  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/contents/source/img/' + library;
-  ajax.open("GET", requrl, true);
-  ajax.send();
+  });
 }
 
 $librarySelector.on('change', function(){
