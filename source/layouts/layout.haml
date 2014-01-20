@@ -13,9 +13,10 @@
       .logo
         %a.logoHeader{href: "/"}
           Patterns Browsers
-        %select#patterns-selector
-          %option{selected: "selected"} Downloading Pattern Names...
-        %main.main{role: "main"}
+        %nav
+          %select#patterns-selector
+            %option{selected: "selected"} Downloading Pattern Names...
+    %main.main{role: "main"}
       = yield
     %footer.footer{role: "contentinfo"}
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
