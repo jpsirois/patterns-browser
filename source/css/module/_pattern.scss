@@ -6,7 +6,6 @@ $patternWidth: 236px;
   position: relative;
   width: $patternWidth;
   height: 100%;
-  background: #999;
   @include box-shadow(0 0 4px #999);
 
   &:hover,
