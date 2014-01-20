@@ -32,8 +32,8 @@ $ bundle exec middleman server
 ```
 
 ## Thank you
-* @subtlepatterns for all those quality Patterns & for the [demo.html](https://github.com/subtlepatterns/SubtlePatterns/blob/gh-pages/demo.html) JavaScript example using the GitHub API to easily access assets.
-* @halgatewood for providing [transparent variations of 150 Subtle Pattern](http://halgatewood.com/150-transparent-subtle-patterns/)
+* [@subtlepatterns](https://github.com/subtlepatterns/) for all those quality Patterns & for the [demo.html](https://github.com/subtlepatterns/SubtlePatterns/blob/gh-pages/demo.html) JavaScript example using the GitHub API to easily access assets.
+* [@halgatewood](https://github.com/halgatewood) for providing [transparent variations of 150 Subtle Pattern](http://halgatewood.com/150-transparent-subtle-patterns/)
 
 ## License
 © 2014 licensed under a [MIT license](http://jpsirois.mit-license.org/license.html)
