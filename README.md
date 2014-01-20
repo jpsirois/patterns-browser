@@ -20,8 +20,20 @@ All Todos & Ideas is tracked in the [project issues](https://github.com/jpsirois
 * Once loaded it is pretty smooth on iOS7. Tested on an iPhone 5.
 * Not tested in any IE version yet
 
-## Thank you
+## Development
+```shell
+$ git clone https://github.com/jpsirois/patterns-browser.git
+$ cd patterns-browser
+$ bundle install
+$ bundle exec middleman server
+== The Middleman is loading
+== Locales: en (Default en)
+== LiveReload is waiting for a browser to connect
+== The Middleman is standing watch at http://0.0.0.0:4567
+== Inspect your site configuration at http://0.0.0.0:4567/__middleman/
+```
 
+## Thank you
 * @subtlepatterns for all those quality Patterns & for the [demo.html](https://github.com/subtlepatterns/SubtlePatterns/blob/gh-pages/demo.html) JavaScript example using the GitHub API to easily access assets.
 * @halgatewood for providing [transparent variations of 150 Subtle Pattern](http://halgatewood.com/150-transparent-subtle-patterns/)
 
