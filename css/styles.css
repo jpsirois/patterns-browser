@@ -1,0 +1,763 @@
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-light.eot");
+  src: url("/font/proximanova/proximanova-light.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-light.woff") format('woff'), url("/font/proximanova/proximanova-light.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-lightitalic.eot");
+  src: url("/font/proximanova/proximanova-lightitalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-lightitalic.woff") format('woff'), url("/font/proximanova/proximanova-lightitalic.ttf") format('truetype');
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-regular.eot");
+  src: url("/font/proximanova/proximanova-regular.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-regular.woff") format('woff'), url("/font/proximanova/proximanova-regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-regularitalic.eot");
+  src: url("/font/proximanova/proximanova-regularitalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-regularitalic.woff") format('woff'), url("/font/proximanova/proximanova-regularitalic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-bold.eot");
+  src: url("/font/proximanova/proximanova-bold.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-bold.woff") format('woff'), url("/font/proximanova/proximanova-bold.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-boldit.eot");
+  src: url("/font/proximanova/proximanova-boldit.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-boldit.woff") format('woff'), url("/font/proximanova/proximanova-boldit.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-semibold.eot");
+  src: url("/font/proximanova/proximanova-semibold.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-semibold.woff") format('woff'), url("/font/proximanova/proximanova-semibold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/font/proximanova/proximanova-semibolditalic.eot");
+  src: url("/font/proximanova/proximanova-semibolditalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-semibolditalic.woff") format('woff'), url("/font/proximanova/proximanova-semibolditalic.ttf") format('truetype');
+  font-weight: 600;
+  font-style: italic; }
+
+/* Fonts {{{*/
+/* line 14, /Users/jp/src/patterns-browser/source/css/base/_settings.scss */
+.fw-light {
+  font-weight: 300; }
+
+/* line 15, /Users/jp/src/patterns-browser/source/css/base/_settings.scss */
+.fw-regular {
+  font-weight: normal; }
+
+/* line 16, /Users/jp/src/patterns-browser/source/css/base/_settings.scss */
+.fw-bold {
+  font-weight: bold; }
+
+/*}}}*/
+/* Colors Name ( generated with: http://chir.ag/projects/name-that-color/ ) {{{*/
+/*}}}*/
+/* Responsive Step {{{*/
+/*}}}*/
+/* Base font color {{{*/
+/*}}}*/
+/* Body background-color {{{*/
+/*}}}*/
+/* Base size {{{*/
+/*}}}*/
+/* Shadow {{{*/
+/*}}}*/
+/* Form {{{*/
+/*}}}*/
+/* Header {{{*/
+/*}}}*/
+/* Content - Main {{{*/
+/*}}}*/
+/* Footer {{{*/
+/*}}}*/
+/* Columns {{{*/
+/*}}}*/
+/* line 6, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 8, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+time {
+  display: inline; }
+
+/* line 9, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+html {
+  font-size: 62.5%;
+  position: relative; }
+
+/* line 10, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+html, body {
+  height: 100%; }
+
+/* line 11, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+body {
+  margin: 0; }
+
+/* line 12, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+ul, ol, dl {
+  margin: 0 0 .75em; }
+
+/* line 13, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+nav ul, ol.breadbrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+.clearfix:after, .row-3-col:after, .row-4-col:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/* line 14, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+.clearfix, .row-3-col, .row-4-col {
+  zoom: 1; }
+
+/* line 15, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+a *, button * {
+  cursor: pointer; }
+
+/* line 16, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+a img {
+  border: 0; }
+
+/* line 17, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+p {
+  margin: 0 0 .5em; }
+
+/* line 18, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+p ~ p, p ~ ul {
+  margin-top: .5em; }
+
+/* line 19, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+hr {
+  display: none; }
+
+/* line 20, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+small {
+  font-size: 90%; }
+
+/* line 21, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 22, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+sup, sub {
+  height: 0;
+  line-height: 1;
+  vertical-align: baseline;
+  _vertical-align: bottom;
+  position: relative;
+  font-size: 75%; }
+
+/* line 22, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+sup {
+  bottom: 1ex; }
+
+/* line 22, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+sub {
+  top: .5ex; }
+
+/* line 23, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+span.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2em;
+  line-height: 0.8; }
+
+/* line 24, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* line 25, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+button, input[type=submit], input[type=button], * html input {
+  width: auto;
+  overflow: visible; }
+
+/* line 26, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+button, input[type=submit], input[type=button] {
+  cursor: pointer; }
+
+/* line 27, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 1px; }
+
+/* line 28, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+input {
+  margin: 0; }
+
+/* line 29, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+input:-webkit-autofill, input:focus:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset; }
+
+/* line 30, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+dt {
+  font-weight: bold;
+  white-space: nowrap; }
+
+/* line 31, /Users/jp/src/patterns-browser/source/css/base/_reset.scss */
+dt, dd {
+  margin: 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* line 2, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+html, body {
+  position: relative;
+  margin: 0 auto;
+  min-width: 1140px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* line 2, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+    html, body {
+      max-width: 1140px; } }
+  @media (max-width: 740px) {
+    /* line 2, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+    html, body {
+      min-width: 320px;
+      max-width: 100%; } }
+
+/* line 16, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+body {
+  background: white;
+  font-family: "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: black;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 25, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+a {
+  color: black;
+  position: relative; }
+  /* line 30, /Users/jp/src/patterns-browser/source/css/base/_mixins.scss */
+  a:visisted {
+    color: black; }
+  /* line 31, /Users/jp/src/patterns-browser/source/css/base/_mixins.scss */
+  a:hover {
+    color: black; }
+  /* line 32, /Users/jp/src/patterns-browser/source/css/base/_mixins.scss */
+  a:active {
+    color: black; }
+  /* line 30, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+  a i[class^="icon-"] {
+    text-decoration: none;
+    margin: 0 .35em; }
+
+/* line 43, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+a,
+a img,
+a span,
+a:after,
+a:before,
+a h1,
+button,
+span.label {
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  -webkit-transition-property: opacity, color, background-position, background-color, border-color;
+  -moz-transition-property: opacity, color, background-position, background-color, border-color;
+  -o-transition-property: opacity, color, background-position, background-color, border-color;
+  transition-property: opacity, color, background-position, background-color, border-color; }
+
+/* line 48, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+strong {
+  font-weight: bold; }
+
+/* line 52, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+address {
+  font-style: normal;
+  margin: 1em 0; }
+
+/* line 57, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+hr {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border: none; }
+
+/* line 66, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+.wrap-inner {
+  width: 1120px;
+  max-width: 1120px;
+  margin: auto;
+  position: relative;
+  padding: 0 10px; }
+
+/* line 4, /Users/jp/src/patterns-browser/source/css/base/_states.scss */
+.is-hidden {
+  display: none !important; }
+
+/* line 2, /Users/jp/src/patterns-browser/source/css/module/_accessibility.scss */
+.accessibilityText {
+  font-size: 0;
+  text-shadow: none;
+  color: transparent;
+  position: absolute; }
+
+/* line 5, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input, select, textarea, fieldset, button {
+  margin: 0; }
+
+/* line 6, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset, legend {
+  padding: 0;
+  border: 0; }
+
+/* line 7, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input, textarea, legend {
+  font: 16px/1.3 "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif; }
+
+/* line 8, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* line 13, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none; }
+
+/* line 16, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+/* line 25, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row {
+  position: relative;
+  margin: 1.6em 0; }
+
+/* line 30, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+label {
+  display: inline-block;
+  vertical-align: top; }
+
+/* line 34, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+span.label {
+  display: block;
+  font-weight: bold; }
+
+/* line 38, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+span.label, legend {
+  padding-bottom: 0.4em; }
+
+/* line 41, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+label + label {
+  margin-left: 0.8em; }
+
+/* line 44, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+select + select {
+  margin-left: .2em; }
+
+/* line 47, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input + * {
+  margin-left: .4em; }
+
+/* line 51, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+input[type="radio"] + span.label,
+input[type="checkbox"] + span.label {
+  display: inline-block;
+  padding: 0;
+  margin-left: 0.2em;
+  line-height: 0.7; }
+
+/* line 57, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+* + html input + span.label {
+  line-height: 1.3; }
+
+/* line 59, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row .small {
+  width: 15%; }
+/* line 60, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row .medium {
+  width: 40%; }
+/* line 61, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row .large {
+  width: 75%; }
+/* line 62, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row .full {
+  width: 100%; }
+/* line 64, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+.row .small input, .row .small textarea, .row .small select, .row .medium input, .row .medium textarea, .row .medium select, .row .large input, .row .large textarea, .row .large select, .row .full input, .row .full textarea, .row .full select {
+  width: 100%; }
+
+/* line 70, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+strong.error {
+  display: block;
+  margin: 0.6em 0 0;
+  color: red;
+  font-weight: normal; }
+
+/* line 77, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: top; }
+
+/* line 84, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset ul + ul {
+  margin-left: 1em; }
+
+/* line 87, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+* + html fieldset ul + ul {
+  margin-left: 0; }
+
+/* line 89, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset li {
+  display: block;
+  margin: 0 0 0.6em; }
+
+/* line 94, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset li label + input,
+fieldset li label + select {
+  margin-left: 0.4em;
+  margin-top: -1em;
+  line-height: 1; }
+
+/* line 100, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset ul li strong.error {
+  display: inline-block;
+  margin: 0 0 0 0.4em; }
+
+/* line 104, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+fieldset ul + ul li strong.error {
+  display: block;
+  margin: 0.6em 0 0; }
+
+/* Button {{{*/
+/* line 113, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
+button {
+  border: none; }
+
+/*}}}*/
+/* line 3, /Users/jp/src/patterns-browser/source/css/module/_title.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5em;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  color: black;
+  font-weight: 600;
+  font-family: "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif; }
+
+/* line 13, /Users/jp/src/patterns-browser/source/css/module/_title.scss */
+h1 a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none; }
+  /* line 18, /Users/jp/src/patterns-browser/source/css/module/_title.scss */
+  h1 a:hover {
+    color: black;
+    text-decoration: underline; }
+
+/* Shared rules {{{*/
+/* line 6, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-3-col, .row-4-col {
+  width: 100%;
+  font-size: 0; }
+
+/* line 12, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.col-1, .col-2, .col-3, .col-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  font-size: 16px;
+  padding-right: -20px;
+  padding-left: 20px; }
+  /* line 21, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+  .col-1:first-child, .col-2:first-child, .col-3:first-child, .col-4:first-child {
+    padding-left: 0;
+    margin-left: 0; }
+    /* line 25, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+    .col-1:first-child section, .col-2:first-child section, .col-3:first-child section, .col-4:first-child section {
+      margin-left: 0; }
+  /* line 28, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+  .col-1 > section, .col-2 > section, .col-3 > section, .col-4 > section {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+/*}}}*/
+/* Specific Rules {{{*/
+/* line 39, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-3-col .col-1 {
+  width: 33.33333%; }
+/* line 40, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-3-col .col-2 {
+  width: 66.66666%; }
+/* line 41, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-3-col .col-3 {
+  width: 100%; }
+
+/* line 45, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-4-col .col-1 {
+  width: 25%; }
+/* line 46, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-4-col .col-2 {
+  width: 50%; }
+/* line 47, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-4-col .col-3 {
+  width: 75%; }
+/* line 48, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+.row-4-col .col-4 {
+  width: 100%; }
+
+/*}}}*/
+/* @Media Rules {{{*/
+@media (max-width: 740px) {
+  /* line 58, /Users/jp/src/patterns-browser/source/css/module/_column.scss */
+  .row-3-col .col, .row-4-col .col {
+    width: 100%; } }
+/*}}}*/
+/* Global Button {{{*/
+/* line 4, /Users/jp/src/patterns-browser/source/css/module/_button.scss */
+.btn {
+  position: relative;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+  text-align: center; }
+  /* line 12, /Users/jp/src/patterns-browser/source/css/module/_button.scss */
+  .btn em {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    position: relative;
+    vertical-align: middle;
+    font-style: normal; }
+    /* line 20, /Users/jp/src/patterns-browser/source/css/module/_button.scss */
+    .btn em [class^="icon-"]:before, .btn em [class*=" icon-"]:before {
+      font-size: 16px;
+      /*font-size: 1.6rem;*/ }
+
+/* line 26, /Users/jp/src/patterns-browser/source/css/module/_button.scss */
+.btnRound {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px; }
+
+/*}}}*/
+/* line 3, /Users/jp/src/patterns-browser/source/css/module/_box.scss */
+.box {
+  position: absolute;
+  background: #eee;
+  margin: 12px 6px 0 6px;
+  visibility: hidden; }
+
+/* line 5, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternWrap {
+  position: relative;
+  width: 236px;
+  height: 100%;
+  background: #999;
+  -webkit-box-shadow: 0 0 4px #999999;
+  -moz-box-shadow: 0 0 4px #999999;
+  box-shadow: 0 0 4px #999999; }
+  /* line 16, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+  .patternWrap:hover .patternMeta,
+  .patternWrap:hover .patternTitle,
+  .patternWrap:hover .patternOrigin, .patternWrap.focus .patternMeta,
+  .patternWrap.focus .patternTitle,
+  .patternWrap.focus .patternOrigin {
+    visibility: visible; }
+
+/* line 24, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternMeta,
+.patternTitle,
+.patternOrigin {
+  z-index: 10;
+  visibility: hidden;
+  transition-property: color, background, opacity; }
+
+/* line 30, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternMeta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: white;
+  width: 236px;
+  padding: 4px;
+  -webkit-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 -8px 6px -6px rgba(0, 0, 0, 0.35);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9; }
+
+/* line 41, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternTitle {
+  font-size: 16px;
+  /*font-size: 1.6rem;*/
+  text-align: center;
+  margin: 0; }
+
+/* line 47, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternOrigin {
+  bottom: 4px;
+  right: 4px;
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75; }
+  /* line 53, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+  .patternOrigin:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1; }
+
+/* line 58, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternLink {
+  position: relative;
+  z-index: 9;
+  width: 236px;
+  height: 100%;
+  display: block;
+  outline: 0; }
+
+/* line 67, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+.patternFadeWrap {
+  line-height: 0;
+  height: 236px;
+  width: 236px;
+  background-repeat: repeat; }
+
+/* line 4, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top; }
+
+/* line 10, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.l-inline {
+  font-size: 0; }
+  /* line 13, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+  .l-inline .inline, .l-inline > li {
+    font-size: 16px; }
+
+/* line 22, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.l-inline, .l-inline > ul {
+  padding-left: 0;
+  list-style-type: none; }
+/* line 27, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.l-inline li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle; }
+
+/* line 35, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.valign-top {
+  vertical-align: top; }
+
+/* line 35, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.valign-middle {
+  vertical-align: middle; }
+
+/* line 35, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.valign-bottom {
+  vertical-align: bottom; }
+
+/* line 42, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.text-align-left {
+  text-align: left; }
+
+/* line 42, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.text-align-center {
+  text-align: center; }
+
+/* line 42, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.text-align-right {
+  text-align: right; }
+
+/* line 48, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.fl-left {
+  float: left; }
+
+/* line 49, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
+.fl-right {
+  float: right; }
+
+/* line 1, /Users/jp/src/patterns-browser/source/css/layout/_header.scss */
+.header {
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  background: white;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=98);
+  opacity: 0.98;
+  text-align: center; }
+
+/* line 14, /Users/jp/src/patterns-browser/source/css/layout/_header.scss */
+.logo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-align: right;
+  white-space: nowrap;
+  margin: .25em 0; }
+
+/* line 2, /Users/jp/src/patterns-browser/source/css/layout/_header-nav.scss */
+.header nav {
+  float: left;
+  display: inline-block;
+  text-align: center; }
+/* line 7, /Users/jp/src/patterns-browser/source/css/layout/_header-nav.scss */
+.header label {
+  margin: 0 .25em .25em; }
+/* line 10, /Users/jp/src/patterns-browser/source/css/layout/_header-nav.scss */
+.header .label {
+  text-align: left; }
+
+/* line 1, /Users/jp/src/patterns-browser/source/css/layout/_content.scss */
+.main {
+  position: relative;
+  margin-top: 80px; }
