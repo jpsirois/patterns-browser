@@ -10,14 +10,9 @@ A quickly put up simple web view to have a quick and easy way to browse Patterns
 * Grid view of all the Patterns, by library
 * Fullscreen background view of all the Patterns, by library
 
-## TODOS
+## Todos & Ideas
 
-* Add a background-color changer for the transparent variation
-* Update with the all the latest [Subtle Patterns](http://subtlepatterns.com/) submissions. Right now contain all the Pattern from their not updated anymore [GitHub Repository](https://github.com/subtlepatterns/SubtlePatterns). [Last update](https://github.com/subtlepatterns/SubtlePatterns/commit/6e056565a1254c967228aab60c9d9c7d0e63a7e3) on 2013-08-06.
-* Clean SCSS & HAML structure, I used stuff from another of my project and it may have some useless things for the current project purpose.
-* Add the metadata for each Pattern if available
-* Add more Patterns library
-* Add more views
+All Todos & Ideas is tracked in the [project issues](https://github.com/jpsirois/patterns-browser/issues).
 
 ## Browsers Supports
 * Best performances in Safari & Firefox
