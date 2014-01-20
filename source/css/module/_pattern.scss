@@ -39,8 +39,9 @@ $patternWidth: 236px;
 }
 
 .patternTitle {
-  width: 175px;
   @include font-size(16);
+  text-align: center;
+  margin: 0;
 }
 
 .patternOrigin {
