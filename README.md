@@ -1,5 +1,4 @@
 # Patterns Browser
-
 A quickly put up simple web view to have a quick and easy way to browse Patterns.
 
 ## Patterns Availables
@@ -11,7 +10,6 @@ A quickly put up simple web view to have a quick and easy way to browse Patterns
 * Fullscreen background view of all the Patterns, by library
 
 ## Todos & Ideas
-
 All Todos & Ideas is tracked in the [project issues](https://github.com/jpsirois/patterns-browser/issues).
 
 ## Browsers Supports
@@ -38,5 +36,4 @@ $ bundle exec middleman server
 * @halgatewood for providing [transparent variations of 150 Subtle Pattern](http://halgatewood.com/150-transparent-subtle-patterns/)
 
 ## License
-
 © 2014 licensed under a [MIT license](http://jpsirois.mit-license.org/license.html)
