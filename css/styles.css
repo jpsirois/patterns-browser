@@ -1,59 +1,3 @@
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-light.eot");
-  src: url("/font/proximanova/proximanova-light.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-light.woff") format('woff'), url("/font/proximanova/proximanova-light.ttf") format('truetype');
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-lightitalic.eot");
-  src: url("/font/proximanova/proximanova-lightitalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-lightitalic.woff") format('woff'), url("/font/proximanova/proximanova-lightitalic.ttf") format('truetype');
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-regular.eot");
-  src: url("/font/proximanova/proximanova-regular.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-regular.woff") format('woff'), url("/font/proximanova/proximanova-regular.ttf") format('truetype');
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-regularitalic.eot");
-  src: url("/font/proximanova/proximanova-regularitalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-regularitalic.woff") format('woff'), url("/font/proximanova/proximanova-regularitalic.ttf") format('truetype');
-  font-weight: normal;
-  font-style: italic; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-bold.eot");
-  src: url("/font/proximanova/proximanova-bold.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-bold.woff") format('woff'), url("/font/proximanova/proximanova-bold.ttf") format('truetype');
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-boldit.eot");
-  src: url("/font/proximanova/proximanova-boldit.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-boldit.woff") format('woff'), url("/font/proximanova/proximanova-boldit.ttf") format('truetype');
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-semibold.eot");
-  src: url("/font/proximanova/proximanova-semibold.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-semibold.woff") format('woff'), url("/font/proximanova/proximanova-semibold.ttf") format('truetype');
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("/font/proximanova/proximanova-semibolditalic.eot");
-  src: url("/font/proximanova/proximanova-semibolditalic.eot?#iefix") format('eot'), url("/font/proximanova/proximanova-semibolditalic.woff") format('woff'), url("/font/proximanova/proximanova-semibolditalic.ttf") format('truetype');
-  font-weight: 600;
-  font-style: italic; }
-
 /* Fonts {{{*/
 /* line 14, /Users/jp/src/patterns-browser/source/css/base/_settings.scss */
 .fw-light {
@@ -247,7 +191,7 @@ html, body {
 /* line 16, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 body {
   background: white;
-  font-family: "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: black;
@@ -336,7 +280,7 @@ fieldset, legend {
 
 /* line 7, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
 input, textarea, legend {
-  font: 16px/1.3 "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif; }
+  font: 16px/1.3 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 8, /Users/jp/src/patterns-browser/source/css/module/_form.scss */
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -476,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   color: black;
   font-weight: 600;
-  font-family: "Proxima Nova", "Open Sans", "Gill Sans MT", "Gill Sans", Corbel, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 13, /Users/jp/src/patterns-browser/source/css/module/_title.scss */
 h1 a {
@@ -631,21 +575,22 @@ h1 a {
   font-size: 16px;
   /*font-size: 1.6rem;*/
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  font-weight: normal; }
 
-/* line 47, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 48, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternOrigin {
   bottom: 4px;
   right: 4px;
   position: absolute;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75; }
-  /* line 53, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+  /* line 54, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
   .patternOrigin:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
 
-/* line 58, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 59, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternLink {
   position: relative;
   z-index: 9;
@@ -654,7 +599,7 @@ h1 a {
   display: block;
   outline: 0; }
 
-/* line 67, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 68, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternFadeWrap {
   line-height: 0;
   height: 236px;
