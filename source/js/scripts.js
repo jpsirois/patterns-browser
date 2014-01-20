@@ -34,57 +34,6 @@
 
   /*}}}*/
 
-  /* Boxes Layout {{{
-   * Inspiration: http://benholland.me/javascript/how-to-build-a-site-that-works-like-pinterest/ */
-
-  var colCount = 0,
-      colWidth = 0,
-      margin = 12,
-      spaceLeft = 0,
-      windowWidth = 0,
-      boxes = [],
-      boxWrapSelector = '.box'
-
-  $(window).load(function(){
-    setupBoxes()
-    $(window).resize(setupBoxes)
-  })
-
-  function setupBoxes() {
-    windowWidth = $(window).width()
-    boxes = []
-    colWidth = $(boxWrapSelector).outerWidth()
-    colCount = Math.floor(windowWidth/(colWidth+margin*2))
-    spaceLeft = (windowWidth - ((colWidth*colCount)+(margin*(colCount-1)))) / 2
-    for(var i=0;i<colCount;i++){
-      boxes.push(margin)
-    }
-    positionBoxes()
-  }
-
-  function positionBoxes() {
-    $(boxWrapSelector).each(function(){
-      var min = Array.min(boxes),
-          index = $.inArray(min, boxes),
-          leftPos = margin+(index*(colWidth+margin))
-
-      $(this).css({
-        'left':(leftPos+spaceLeft)+'px',
-        'top':min+'px',
-        'visibility': 'visible'
-      })
-
-      boxes[index] = min+$(this).outerHeight()+margin
-    })
-  }
-
-  // Function to get the Min value in Array
-  Array.min = function(array) {
-    return Math.min.apply(Math, array)
-  }
-
-  /*}}}*/
-
   /* Item Handling {{{*/
 
   $('.itemWrap').each(function(){
@@ -109,10 +58,67 @@
 
 })(jQuery, window, document)
 
+/* Boxes Layout {{{
+ * Inspiration: http://benholland.me/javascript/how-to-build-a-site-that-works-like-pinterest/ */
+
+var colCount = 0,
+    colWidth = 0,
+    margin = 12,
+    spaceLeft = 0,
+    windowWidth = 0,
+    boxes = [],
+    boxWrapSelector = '.box'
+
+$(window).load(function(){
+  $(window).resize(setupBoxes)
+})
+
+function setupBoxes() {
+  windowWidth = $(window).width()
+  boxes = []
+  colWidth = $(boxWrapSelector).outerWidth()
+  colCount = Math.floor(windowWidth/(colWidth+margin*2))
+  spaceLeft = (windowWidth - ((colWidth*colCount)+(margin*(colCount-1)))) / 2
+  for(var i=0;i<colCount;i++){
+    boxes.push(margin)
+  }
+  positionBoxes()
+}
+
+function positionBoxes() {
+  $(boxWrapSelector).each(function(){
+    var min = Array.min(boxes),
+        index = $.inArray(min, boxes),
+        leftPos = margin+(index*(colWidth+margin))
+
+    $(this).css({
+      'left':(leftPos+spaceLeft)+'px',
+      'top':min+'px',
+      'visibility': 'visible'
+    })
+
+    boxes[index] = min+$(this).outerHeight()+margin
+  })
+}
+
+// Function to get the Min value in Array
+Array.min = function(array) {
+  return Math.min.apply(Math, array)
+}
+
+/*}}}*/
 
 // Use GitHub as API to Load patterns
 // Inspired from: https://github.com/subtlepatterns/SubtlePatterns/blob/gh-pages/demo.html
-var loadPatterns = function () {
+
+var $body = $('body'),
+    $librarySelector = $('#library-selector'),
+    $layoutSelector = $('#layout-selector'),
+    $patternsSelector = $('#patterns-selector'),
+    $patternsViewport = $('.main')
+
+var loadPatterns = function (library, layout) {
+  $patternsSelector.html('<option>Downloading Pattern List…</option>');
   var ajax, ajaxTimeout, requrl;
   ajax = (window.ActiveXObject) ? new ActiveXObject("Microsoft.XMLHTTP") : (XMLHttpRequest && new XMLHttpRequest()) || null;
 
@@ -121,36 +127,67 @@ var loadPatterns = function () {
   }, 6000);
 
   ajax.onreadystatechange = function () {
-    var selectEle, itemsArray, itemsString, i;
+    var itemsArray, itemsString, i;
     if (ajax.readyState === 4) {
       if (ajax.status === 200) {
         clearTimeout(ajaxTimeout);
         if (ajax.status !== 200) {
 
         } else {
-          selectEle = document.getElementById('patterns-selector');
           itemsArray = JSON.parse(ajax.responseText);
           itemsString = '';
-          for(i = 0; i < itemsArray.length; i++) {
-            if(itemsArray[i].name.indexOf('.png') !== -1) {
-              itemsString += '<option value="'+itemsArray[i].html_url.replace("blob", "raw")+'">'+itemsArray[i].name+'</option>';
+          if (layout === 'grid') {
+            $body.css('background-image',false);
+            for(i = 0; i < itemsArray.length; i++) {
+              if(itemsArray[i].name.indexOf('.png') !== -1) {
+                imgUrl = itemsArray[i].html_url.replace("blob", "raw");
+                itemsString += '<div class="box">\
+                  <div class="patternWrap">\
+                    <a href="' + imgUrl + '" class="patternLink">\
+                      <div class="patternFadeWrap" style="background-image: url(' + imgUrl + ')"></div>\
+                      <div class="patternMeta"><h2 class="patternTitle">' + itemsArray[i].name + '</h2></div>\
+                    </a>\
+                  </div>\
+                </div>';
+              }
             }
+            $patternsViewport.html(itemsString);
+            setupBoxes()
+          } else if (layout === 'bg') {
+            $patternsViewport.html('');
+            for(i = 0; i < itemsArray.length; i++) {
+              if(itemsArray[i].name.indexOf('.png') !== -1) {
+                itemsString += '<option value="'+itemsArray[i].html_url.replace("blob", "raw")+'">'+itemsArray[i].name+'</option>';
+              }
+            }
+            $patternsSelector.html(itemsString);
           }
-          selectEle.innerHTML = itemsString;
-          selectEle.setAttribute("onchange", "setPattern(this.value);"); // = setPattern(selectEle.value);
         }
       }
     }
   };
 
-  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/contents/source/img/subtlepatterns';
+  requrl = 'https://api.github.com/repos/jpsirois/patterns-browser/contents/source/img/' + library;
   ajax.open("GET", requrl, true);
   ajax.send();
 }
 
-var setPattern = function (url) {
-  var bodyEle = document.getElementsByTagName('body')[0];
-  bodyEle.style.backgroundImage = 'url("'+url+'")';
-}
+$librarySelector.on('change', function(){
+  loadPatterns($librarySelector.val(),$layoutSelector.val())
+});
 
-window.onload = loadPatterns();
+$layoutSelector.on('change', function(){
+  if ($(this).val() === 'bg') {
+    $patternsSelector.parent('label').removeClass('is-hidden')
+  }
+  else {
+    $patternsSelector.parent('label').addClass('is-hidden')
+  }
+  loadPatterns($librarySelector.val(),$layoutSelector.val())
+});
+
+$patternsSelector.on('change', function(){
+  $body.css('background-image','url("' + $(this).val() + '")');
+})
+
+window.onload = loadPatterns($librarySelector.val(),$layoutSelector.val());

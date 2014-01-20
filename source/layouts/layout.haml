@@ -11,11 +11,24 @@
   %body{:class => page_classes}
     %header.header{role: "banner"}
       .logo
-        %a.logoHeader{href: "/"}
-          Patterns Browsers
-        %nav
+        Patterns Browsers
+      %nav
+        %label
+          %span.label Library
+          %select#library-selector
+            %option{value: "subtlepatterns", selected: "selected"} Subtle Patterns
+            %option{value: "subtlepatterns-transparent"} Subtle Patterns - Transparent
+
+        %label
+          %span.label Layout
+          %select#layout-selector
+            %option{value: "grid", selected: "selected"} Grid
+            %option{value: "bg"} Fullscreen
+
+        %label.is-hidden
+          %span.label Pattern
           %select#patterns-selector
-            %option{selected: "selected"} Downloading Pattern Names...
+            %option Downloading Pattern List…
     %main.main{role: "main"}
       = yield
     %footer.footer{role: "contentinfo"}

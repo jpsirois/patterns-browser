@@ -65,4 +65,7 @@ $patternWidth: 236px;
 
 .patternFadeWrap {
   line-height: 0;
+  height: $patternWidth;
+  width: $patternWidth;
+  background-repeat: repeat;
 }
