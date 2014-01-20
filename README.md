@@ -2,7 +2,7 @@
 
 A quickly put up simple web view to have a quick and easy way to browse Patterns.
 
-## Patterns Availanle
+## Patterns Availables
 * The 356 first [SubtlePatterns](http://subtlepatterns.com/)
 * Transparent variants of 154 SubtlePatterns made by @halgatewood
 
@@ -28,7 +28,3 @@ All Todos & Ideas is tracked in the [project issues](https://github.com/jpsirois
 ## License
 
 © 2014 licensed under a [MIT license](http://jpsirois.mit-license.org/license.html)
-
-
-
-
