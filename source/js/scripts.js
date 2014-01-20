@@ -130,7 +130,7 @@ var loadPatterns = function (library, layout) {
       itemsArray = reply;
       itemsString = '';
       if (layout === 'grid') {
-        $body.css('background-image',false);
+        $body.css('background-image','none');
         for(i = 0; i < itemsArray.length; i++) {
           if(itemsArray[i].name.indexOf('.png') !== -1) {
             imgUrl = itemsArray[i].html_url.replace("blob", "raw");
