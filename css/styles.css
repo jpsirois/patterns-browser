@@ -195,9 +195,10 @@ body {
   font-weight: normal;
   font-size: 16px;
   color: black;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  padding-top: 110px; }
 
-/* line 25, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 26, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 a {
   color: black;
   position: relative; }
@@ -210,12 +211,12 @@ a {
   /* line 32, /Users/jp/src/patterns-browser/source/css/base/_mixins.scss */
   a:active {
     color: black; }
-  /* line 30, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+  /* line 31, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
   a i[class^="icon-"] {
     text-decoration: none;
     margin: 0 .35em; }
 
-/* line 43, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 44, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 a,
 a img,
 a span,
@@ -233,16 +234,16 @@ span.label {
   -o-transition-property: opacity, color, background-position, background-color, border-color;
   transition-property: opacity, color, background-position, background-color, border-color; }
 
-/* line 48, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 49, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 strong {
   font-weight: bold; }
 
-/* line 52, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 53, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 address {
   font-style: normal;
   margin: 1em 0; }
 
-/* line 57, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 58, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 hr {
   display: block;
   height: 2px;
@@ -250,7 +251,7 @@ hr {
   background: black;
   border: none; }
 
-/* line 66, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
+/* line 67, /Users/jp/src/patterns-browser/source/css/base/_base.scss */
 .wrap-inner {
   width: 1120px;
   max-width: 1120px;
@@ -603,6 +604,17 @@ h1 a {
   width: 236px;
   background-repeat: repeat; }
 
+/* line 3, /Users/jp/src/patterns-browser/source/css/module/_color-picker.scss */
+#bgcolor-selector {
+  border: solid 1px #999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 80px;
+  text-align: left; }
+
 /* line 4, /Users/jp/src/patterns-browser/source/css/layout/_global.scss */
 .inline {
   display: inline-block;
@@ -701,5 +713,4 @@ h1 a {
 
 /* line 1, /Users/jp/src/patterns-browser/source/css/layout/_content.scss */
 .main {
-  position: relative;
-  margin-top: 110px; }
+  position: relative; }

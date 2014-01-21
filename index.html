@@ -35,6 +35,10 @@
             <option>Downloading Pattern List…</option>
           </select>
         </label>
+        <label>
+          <span class='label'>Body Bg-Color</span>
+          <input class="color {onImmediateChange:'updateBodyBgColorInfo(this);',pickerPosition:'bottom',pickerFaceColor:'#dddddd',pickerBorderColor:'#999999',pickerInsetColor:'#dddddd'}" id='bgcolor-selector'>
+        </label>
       </nav>
     </header>
     <main class='main' role='main'>
@@ -45,6 +49,7 @@
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src='./js/echo.js'></script>
     <script src='./js/jquery-ajax-localstorage-cache.js'></script>
+    <script src='./js/jscolor/jscolor.js'></script>
     <script src='./js/scripts.js'></script>
   </body>
 </html>
