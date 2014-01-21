@@ -527,8 +527,6 @@ h1 a {
 /* line 3, /Users/jp/src/patterns-browser/source/css/module/_box.scss */
 .box {
   position: absolute;
-  background: #eee;
-  margin: 12px 6px 0 6px;
   visibility: hidden; }
 
 /* line 5, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
@@ -536,11 +534,10 @@ h1 a {
   position: relative;
   width: 236px;
   height: 100%;
-  background: #999;
   -webkit-box-shadow: 0 0 4px #999999;
   -moz-box-shadow: 0 0 4px #999999;
   box-shadow: 0 0 4px #999999; }
-  /* line 16, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+  /* line 15, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
   .patternWrap:hover .patternMeta,
   .patternWrap:hover .patternTitle,
   .patternWrap:hover .patternOrigin, .patternWrap.focus .patternMeta,
@@ -548,7 +545,7 @@ h1 a {
   .patternWrap.focus .patternOrigin {
     visibility: visible; }
 
-/* line 24, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 23, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternMeta,
 .patternTitle,
 .patternOrigin {
@@ -556,7 +553,7 @@ h1 a {
   visibility: hidden;
   transition-property: color, background, opacity; }
 
-/* line 30, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 29, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternMeta {
   position: absolute;
   left: 0;
@@ -570,7 +567,7 @@ h1 a {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9; }
 
-/* line 41, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 40, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternTitle {
   font-size: 16px;
   /*font-size: 1.6rem;*/
@@ -578,19 +575,19 @@ h1 a {
   margin: 0;
   font-weight: normal; }
 
-/* line 48, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 47, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternOrigin {
   bottom: 4px;
   right: 4px;
   position: absolute;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75; }
-  /* line 54, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+  /* line 53, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
   .patternOrigin:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1; }
 
-/* line 59, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 58, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternLink {
   position: relative;
   z-index: 9;
@@ -599,7 +596,7 @@ h1 a {
   display: block;
   outline: 0; }
 
-/* line 68, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
+/* line 67, /Users/jp/src/patterns-browser/source/css/module/_pattern.scss */
 .patternFadeWrap {
   line-height: 0;
   height: 236px;
@@ -705,4 +702,4 @@ h1 a {
 /* line 1, /Users/jp/src/patterns-browser/source/css/layout/_content.scss */
 .main {
   position: relative;
-  margin-top: 80px; }
+  margin-top: 110px; }

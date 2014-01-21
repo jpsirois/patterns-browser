@@ -82,6 +82,7 @@ function setupBoxes() {
   for(var i=0;i<colCount;i++){
     boxes.push(margin)
   }
+
   positionBoxes()
 }
 
@@ -137,7 +138,7 @@ var loadPatterns = function (library, layout) {
             itemsString += '<div class="box">\
               <div class="patternWrap">\
                 <a href="' + imgUrl + '" class="patternLink">\
-                  <div class="patternFadeWrap" style="background-image: url(' + imgUrl + ')"></div>\
+                  <div class="patternFadeWrap" data-echo="' + imgUrl + '"></div>\
                   <div class="patternMeta"><h2 class="patternTitle">' + itemsArray[i].name + '</h2></div>\
                 </a>\
               </div>\
@@ -146,6 +147,10 @@ var loadPatterns = function (library, layout) {
         }
         $patternsViewport.html(itemsString);
         setupBoxes()
+        Echo.init({
+          offset: 1000,
+          thrasdfottle: 50
+        });
       } else if (layout === 'bg') {
         $patternsViewport.html('');
         for(i = 0; i < itemsArray.length; i++) {
