@@ -5,4 +5,7 @@
   @include border-radius(3px);
   width: 80px;
   text-align: left;
+
+  /* Prevent uglyness of current selected color choosed from picker */
+  background-color: white !important;
 }
