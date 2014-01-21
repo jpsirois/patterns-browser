@@ -29,10 +29,16 @@
           %span.label Pattern
           %select#patterns-selector
             %option Downloading Pattern List…
+
+        %label
+          %span.label Body Background-Color
+          %input#bgcolor-selector{class: "color {onImmediateChange:'updateBodyBgColorInfo(this);',pickerPosition:'top'}"}
+
     %main.main{role: "main"}
       = yield
     %footer.footer{role: "contentinfo"}
     %script{src: "//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"}
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
     %script{src: "./js/jquery-ajax-localstorage-cache.js"}
+    %script{src: "./js/jscolor/jscolor.js"}
     %script{src: "./js/scripts.js"}

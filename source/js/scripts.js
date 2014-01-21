@@ -115,6 +115,7 @@ var $body = $('body'),
     $librarySelector = $('#library-selector'),
     $layoutSelector = $('#layout-selector'),
     $patternsSelector = $('#patterns-selector'),
+    $bgcolorSelector = $('#bgcolor-selector'),
     $patternsViewport = $('.main')
 
 var loadPatterns = function (library, layout) {
@@ -176,5 +177,9 @@ $layoutSelector.on('change', function(){
 $patternsSelector.on('change', function(){
   $body.css('background-image','url("' + $(this).val() + '")');
 })
+
+function updateBodyBgColorInfo(color) {
+  $body.css('background-color', '#' + color);
+}
 
 window.onload = loadPatterns($librarySelector.val(),$layoutSelector.val());
